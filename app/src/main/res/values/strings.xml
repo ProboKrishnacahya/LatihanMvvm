@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LatihanMvvm</string>
+    <string name="type_name">Type Your Name</string>
+    <string name="type_nim">Type Your NIM</string>
+    <string name="submit">Submit</string>
+    <string name="add_data">Add Data Mahasiswa</string>
+</resources>
