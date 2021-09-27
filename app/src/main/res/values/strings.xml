@@ -1,8 +1,17 @@
 <resources>
+
     <string name="app_name">LatihanMvvm</string>
+
+    <!-- activity_add_data.xml -->
+    <string name="add_data">Add Data Mahasiswa</string>
     <string name="type_name">Type Your Name</string>
     <string name="type_nim">Type Your NIM</string>
     <string name="submit">Submit</string>
-    <string name="add_data">Add Data Mahasiswa</string>
+
+    <!-- adapter_mahasiswa.xml -->
+    <string name="txt_null">-</string>
+
+    <!-- AddDataActivity.java -->
     <string name="can_not_null">Harus diisi! </string>
+
 </resources>
