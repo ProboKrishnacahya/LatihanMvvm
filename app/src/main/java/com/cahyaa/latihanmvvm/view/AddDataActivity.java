@@ -82,4 +82,5 @@ public class AddDataActivity extends AppCompatActivity {
     public void onBackPressed() {
         finish();
     }
+
 }

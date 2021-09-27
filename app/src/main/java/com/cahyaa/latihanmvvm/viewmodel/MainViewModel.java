@@ -21,7 +21,7 @@ public class MainViewModel extends AndroidViewModel {
         repository = MainRepository.getInstance();
     }
 
-    //*Begin of MVVM Add Mahasiswa
+    //*Begin of ViewModel Add Mahasiswa
     private MutableLiveData<ArrayList<Mahasiswa>> resultAddMahasiswa = new MutableLiveData<>();
     public void addMahasiswa(String name, String nim) {
         resultAddMahasiswa = repository.addMahasiswa(name, nim);
@@ -30,5 +30,17 @@ public class MainViewModel extends AndroidViewModel {
     public LiveData<ArrayList<Mahasiswa>> getResultAddMahasiswa() {
         return resultAddMahasiswa;
     }
-    //End of MVVM Add Mahasiswa
+    //End of ViewModel Add Mahasiswa
+
+    //*Begin of ViewModel Get Mahasiswa
+    private MutableLiveData<ArrayList<Mahasiswa>> resultGetMahasiswa = new MutableLiveData<>();
+    public void getMahasiswa() {
+        resultGetMahasiswa = repository.getMahasiswa();
+    }
+
+    public LiveData<ArrayList<Mahasiswa>> getResultGetMahasiswa() {
+        return resultGetMahasiswa;
+    }
+    //End of ViewModel Get Mahasiswa
+
 }
