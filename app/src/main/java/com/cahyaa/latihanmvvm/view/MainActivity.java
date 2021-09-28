@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         viewModel = new ViewModelProvider(MainActivity.this).get(MainViewModel.class);
-        viewModel.getMahasiswa();
-        viewModel.getResultGetMahasiswa().observe(MainActivity.this, showResult);
+        viewModel.getMahasiswa(); //Request
+        viewModel.getResultGetMahasiswa().observe(MainActivity.this, showResult); //Response
     }
 
     private Observer<ArrayList<Mahasiswa>> showResult = new Observer<ArrayList<Mahasiswa>>() {

@@ -23,10 +23,12 @@ public class MainViewModel extends AndroidViewModel {
 
     //*Begin of ViewModel Add Mahasiswa
     private MutableLiveData<ArrayList<Mahasiswa>> resultAddMahasiswa = new MutableLiveData<>();
+    //Request
     public void addMahasiswa(String name, String nim) {
         resultAddMahasiswa = repository.addMahasiswa(name, nim);
     }
 
+    //Response
     public LiveData<ArrayList<Mahasiswa>> getResultAddMahasiswa() {
         return resultAddMahasiswa;
     }

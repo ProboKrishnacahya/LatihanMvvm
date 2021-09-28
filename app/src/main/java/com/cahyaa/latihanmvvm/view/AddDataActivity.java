@@ -52,8 +52,8 @@ public class AddDataActivity extends AppCompatActivity {
                     if (nim.isEmpty()) {
                         til_nim.setError(getString(R.string.can_not_null));
                     } else {
-                        viewModel.addMahasiswa(name, nim);
-                        viewModel.getResultAddMahasiswa().observe(AddDataActivity.this, showResult);
+                        viewModel.addMahasiswa(name, nim); //Request
+                        viewModel.getResultAddMahasiswa().observe(AddDataActivity.this, showResult); //Response
                     }
                 }
             }
